@@ -5,6 +5,10 @@ const wrapAsync = require("../utils/wrapAsync");
 const passport = require("passport");
 const {saveRedirectUrl} = require("../middleware");
 const userController = require("../controllers/users");
+const listingController = require("../controllers/listings.js");
+
+router.route('/')
+.get(wrapAsync(listingController.index));
 
 router.route('/signup')
 .get(userController.renderSignupForm)
