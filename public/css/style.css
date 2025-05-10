@@ -10,6 +10,9 @@ body{
 .navbar {
     height: 5rem;
 }
+.navbar-nav{
+    background-color: white;
+}
 .fa-compass{
     color:#fe424d;
     font-size: 2rem;
@@ -103,3 +106,38 @@ body{
     height: 400px;
     width: 60vw;
 }
+
+/* managing filter */
+#filters{
+    display: flex;
+    /* width: 80vw; */
+    /* flex-wrap: wrap; */
+    align-items: center;
+    overflow-x: auto;
+}
+.filter{
+    margin-right: 2rem;
+    margin-top: 1.5rem;
+    text-align: center;
+    opacity: 0.8;
+}
+.filter:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+.tax-info{
+    display: none;
+}
+/* removing tax toggle feature */
+/* .tax-toggle{
+    border: 2px solid black;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 3rem;
+    white-space: nowrap;
+    margin-left: 3rem;
+    width: 20%;
+} */
